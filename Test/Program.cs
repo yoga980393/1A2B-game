@@ -44,16 +44,13 @@ namespace Test
                     {
                         for (int j = 0; j < sul.Length; j++)
                         {
-                            if (i == j)
+                            if (numbers[i] == sul[j])
                             {
-                                if (numbers[i] == sul[j])
+                                if (i == j)
                                 {
                                     a++;
                                 }
-                            }
-                            else
-                            {
-                                if (numbers[i] == sul[j])
+                                else
                                 {
                                     b++;
                                 }
