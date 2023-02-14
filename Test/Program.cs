@@ -26,18 +26,18 @@ namespace Test
                     numbers[r] = temp;
                 }
 
-                //Console.WriteLine($"{numbers[0]}{numbers[1]}{numbers[2]}{numbers[3]}");
+                Console.WriteLine($"{numbers[0]}{numbers[1]}{numbers[2]}{numbers[3]}");
 
                 while (true)
                 {
                     int[] sul = new int[4];
-                    int a = 0, b = 0, n = 0;
+                    int a = 0, b = 0;
 
                     Console.WriteLine("請輸入猜測的數字");
-                    foreach (char c in Console.ReadLine())
+                    string s = Console.ReadLine();
+                    for (int i = 0; i < sul.Length; i++)
                     {
-                        sul[n] = Convert.ToInt32(c.ToString());
-                        n++;
+                        sul[i] = int.Parse(s[i].ToString());
                     }
 
                     for (int i = 0; i < sul.Length; i++)
