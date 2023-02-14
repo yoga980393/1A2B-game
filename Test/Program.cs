@@ -31,14 +31,13 @@ namespace Test
                 while (true)
                 {
                     int[] sul = new int[4];
-                    int a = 0, b = 0;
+                    int a = 0, b = 0, n = 0;
 
                     Console.WriteLine("請輸入猜測的數字");
-                    
-                    string s = Console.ReadLine();
-                    for(int i = 0; i < sul.Length; i++)
+                    foreach (char c in Console.ReadLine())
                     {
-                        sul[i] = int.Parse(s[i].ToString());
+                        sul[n] = Convert.ToInt32(c.ToString());
+                        n++;
                     }
 
                     for (int i = 0; i < sul.Length; i++)
